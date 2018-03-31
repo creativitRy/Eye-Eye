@@ -1,22 +1,24 @@
 {
-  "name": "electron-quick-start",
+  "name": "eye-eye",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Dynamic eye movement tracking for preventing strained eyes",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/creativitRy/Eye-Eye",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "eye",
+    "stretch",
+    "wholesome"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Gahwon Lee, Tiger Zhang, Matthew Zhao",
+  "license": "GPL-3.0",
   "devDependencies": {
     "electron": "^1.8.4"
+  },
+  "dependencies": {
+    "electron-settings": "^3.1.4"
   }
 }
