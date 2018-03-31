@@ -1,3 +1,6 @@
+const {BrowserWindow} = require("electron");
+const {load} = require("./../preferences/prefLoader");
+
 module.exports.mainMenu = {
     label: "File",
     submenu: [
@@ -16,7 +19,8 @@ module.exports.mainMenu = {
         {
             label: "Preferences",
             click: () => {
-                alert("Preferences")
+                const win = new BrowserWindow();
+                load(win);
             }
         },
         {
