@@ -11,5 +11,6 @@ module.exports.initMenu = function (){
     if (true) {
         menus.push(devMenu);
     }
-    //Menu.setApplicationMenu(Menu.buildFromTemplate(menus));
+
+    Menu.setApplicationMenu(Menu.buildFromTemplate(menus));
 }
