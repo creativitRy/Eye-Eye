@@ -2,6 +2,9 @@ const {app, BrowserWindow} = require("electron");
 const {loadPref} = require("./../preferences/prefLoader");
 const {change} = require("./../calibrator/calibrateLoader");
 
+let calibrate = null;
+let pref = null;
+
 module.exports.mainMenu = {
     label: "File",
     submenu: [
@@ -14,16 +17,26 @@ module.exports.mainMenu = {
         {
             label: "Calibrate",
             click: () => {
-              const calibrate = new BrowserWindow({width: 1000, height: 800, resizable: false});
-              calibrate.maximize();
-              change(calibrate);
+                if (calibrate == null) {
+                    calibrate = new BrowserWindow({width: 1000, height: 800, resizable: false});
+                    calibrate.on('closed', () => {
+                        calibrate = null
+                    });
+                    calibrate.maximize();
+                    change(calibrate);
+                }
             }
         },
         {
             label: "Preferences",
             click: () => {
-                const win = new BrowserWindow();
-                loadPref(win);
+                if (pref == null) {
+                    pref = new BrowserWindow();
+                    pref.on('closed', () => {
+                        pref = null
+                    });
+                    loadPref(pref);
+                }
             }
         },
         {
