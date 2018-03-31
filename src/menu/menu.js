@@ -1,8 +1,8 @@
-import {Menu} from "electron";
-import {devMenu} from "./dev_menu";
-import {mainMenu} from "./main_menu";
+const {Menu} = require("electron");
+const {devMenu} = require("./dev_menu");
+const {mainMenu} = require("./main_menu");
 
-export const initMenu = () => {
+module.exports.initMenu = function (){
     const menus = [mainMenu];
     if (process.platform === 'darwin') {
         menus.unshift({});
@@ -11,5 +11,5 @@ export const initMenu = () => {
     if (true) {
         menus.push(devMenu);
     }
-    Menu.setApplicationMenu(Menu.buildFromTemplate(menus));
-};
+    //Menu.setApplicationMenu(Menu.buildFromTemplate(menus));
+}

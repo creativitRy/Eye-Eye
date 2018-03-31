@@ -1,6 +1,6 @@
-import {app, BrowserWindow} from "electron";
+const {app, BrowserWindow} = require("electron");
 
-export const devMenu = {
+module.exports.devMenu = {
     label: "Development",
     submenu: [
         {

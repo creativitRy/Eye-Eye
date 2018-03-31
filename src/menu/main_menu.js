@@ -1,4 +1,4 @@
-export const mainMenu = {
+module.exports.mainMenu = {
     label: process.platform === "File",
     submenu: [
         { label: "Undo", accelerator: "CmdOrCtrl+Z", selector: "undo:" },
