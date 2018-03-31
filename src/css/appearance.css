@@ -6,7 +6,7 @@
   text-align: center;
 }
 #button1 {
-  margin-top: 275px;
+  margin-top: 10px;
 }
 #button2 {
   margin-top: 25px !important;
@@ -19,12 +19,13 @@
   width: 80%;
   margin: auto;
 
-  border: 3px groove black;
-  border-radius: 5px;
-
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   font-size: 2em;
+
+
+  border: 3px groove black;
+  border-radius: 5px;
 
   text-align: center;
 
@@ -44,4 +45,8 @@
 
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
+}
+#logo {
+  height: 275px;
+  margin-left: 110px;
 }

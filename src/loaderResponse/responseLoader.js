@@ -2,7 +2,8 @@ const electron = require('electron')
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
-const BrowserWindow = electron.remote.BrowserWindow
+const BrowserWindow = electron.remote.BrowserWindow;
+// In main process.
 
 const path = require('path')
 const url = require('url')
@@ -32,5 +33,5 @@ $(document).ready(function(){
     $('#accuracy').text(accuracy + "%");
     $('#loading').hide();
     $('#result').show();
-  }, 4000);
+  }, 1);
 });
