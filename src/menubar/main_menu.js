@@ -1,4 +1,4 @@
-const {BrowserWindow} = require("electron");
+const {app, BrowserWindow} = require("electron");
 const {loadPref} = require("./../preferences/prefLoader");
 const {change} = require("./../calibrator/calibrateLoader");
 
