@@ -12,7 +12,7 @@ module.exports.devMenu = {
         },
         {
             label: "Toggle DevTools",
-            accelerator: "Alt+CmdOrCtrl+I",
+            accelerator: "Shift+CmdOrCtrl+I",
             click: () => {
                 BrowserWindow.getFocusedWindow().toggleDevTools();
             }
