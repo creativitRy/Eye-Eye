@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Lora:400,400i|Permanent+Marker|Ubuntu:400,700');
+.title {
+  /* font-family: 'PT Sans', sans-serif; */
+  font-family: 'Permanent Marker', cursive;
+  font-size: 6em;
+  text-align: center;
+}
+#button1 {
+  margin-top: 300px;
+}
+#button2 {
+  margin-top: 25px !important;
+}
+#button3 {
+  margin-top: 25px !important;
+}
+.selection {
+  height: 40px;
+  width: 80%;
+  margin: auto;
+
+  border: 1px groove black;
+  border-radius: 3px;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+
+  text-align: center;
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.selection:hover {
+  color: white;
+  background: #303238;
+  cursor: pointer;
+
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}

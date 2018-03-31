@@ -1,5 +1,6 @@
 const {BrowserWindow} = require("electron");
 const {load} = require("./../preferences/prefLoader");
+const {change} = require("./../calibrator/calibrateLoader");
 
 module.exports.mainMenu = {
     label: "File",
@@ -13,7 +14,8 @@ module.exports.mainMenu = {
         {
             label: "Calibrate",
             click: () => {
-                alert("Calibrate")
+              const calibrate = new BrowserWindow({width: 1000, height: 800, resizable: false});
+              change(calibrate);
             }
         },
         {
