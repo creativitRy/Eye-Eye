@@ -44,7 +44,7 @@ $(document).ready(function(){
   helpModalShow();
      $(".Calibration").click(function(){ // click event on the calibration buttons
 
-      PointCalibrate = 9;
+      // PointCalibrate = 9;
       //NOTE; DELETE THIS WHEN READY FOR PROD.
 
       var id = $(this).attr('id');

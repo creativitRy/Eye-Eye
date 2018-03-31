@@ -22,6 +22,7 @@ module.exports.begin = function () {
 module.exports.startTimer = startTimer;
 
 module.exports.resetTimeout = function () {
+    clearTimeout(pointer);
     resetVals();
     startTimer();
 };
