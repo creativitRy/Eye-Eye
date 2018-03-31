@@ -15,6 +15,7 @@ module.exports.mainMenu = {
             label: "Calibrate",
             click: () => {
               const calibrate = new BrowserWindow({width: 1000, height: 800, resizable: false});
+              calibrate.maximize();
               change(calibrate);
             }
         },
