@@ -32,5 +32,5 @@ $(document).ready(function(){
     $('#accuracy').text(accuracy + "%");
     $('#loading').hide();
     $('#result').show();
-  }, 4500);
+  }, 4000);
 });

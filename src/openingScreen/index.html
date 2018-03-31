@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/appearance.css">
+    <script src="./index.js"></script>
     <title>Hello World!</title>
   </head>
   <body>
     <div class="title">EYE/EYE</div>
     <!-- add the image thing here -->
-    <div class="selection" id="button2">EXERCISES</div>
-    <div class="selection" id="button3">CALIBRATE</div>
-    <div class="selection" id="button1">PREFERENCES</div>
+    <div class="selection" id="button1" onclick="transfer1()">EXERCISES</div>
+    <div class="selection" id="button2" onclick="transfer2()">CALIBRATE</div>
+    <div class="selection" id="button3" onclick="transfer3()">PREFERENCES</div>
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')

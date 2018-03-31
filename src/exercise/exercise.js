@@ -1,9 +1,11 @@
-const {BrowserWindow} = require('electron');
+const {remote} = require('electron');
 const settings = require('electron-settings');
 
 let exerciseWindow = null;
 
 module.exports.showNotice = function () {
+  const BrowserWindow = remote.BrowserWindow;
+  
     if (exerciseWindow != null) {
         exerciseWindow.focus();
         return;

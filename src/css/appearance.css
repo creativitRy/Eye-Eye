@@ -6,7 +6,7 @@
   text-align: center;
 }
 #button1 {
-  margin-top: 300px;
+  margin-top: 275px;
 }
 #button2 {
   margin-top: 25px !important;
@@ -19,10 +19,11 @@
   width: 80%;
   margin: auto;
 
-  border: 1px groove black;
-  border-radius: 3px;
+  border: 3px groove black;
+  border-radius: 5px;
 
   font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
   font-size: 2em;
 
   text-align: center;
@@ -41,6 +42,6 @@
   background: #303238;
   cursor: pointer;
 
-  -webkit-transform: translateX(8px);
-  transform: translateX(8px);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
