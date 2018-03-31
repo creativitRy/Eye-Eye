@@ -4,45 +4,43 @@
     <meta charset="UTF-8">
     <title>Preferences</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="settings.js"></script>
 </head>
 <body>
 <div>
-    <h1>Preferences</h1>
-    <h2>Exercise</h2>
-    <label for="useVideo">Use YouTube Video</label><input id="useVideo" type="checkbox" value=false>
+  <h1 id="titleText">Preferences</h1>
+  <h2 class="subtitle">Exercises</h2>
 
+  <label for="useVideo" class="labelText">
+    Use YouTube Video
+  </label>
+  <input id="useVideo" type="checkbox" value=false class="inputText">
 
-    <div id="youtubeLinks">
-        <label for="videoLink">YouTube Link</label><input id="videoLink" type="url" placeholder="https://www.youtube.com/watch?v=PRwXuRIR3Co" list="defaultVideos">
+  <br><br>
 
-        <datalist id="defaultVideos">
-            <option value="https://www.youtube.com/watch?v=PRwXuRIR3Co">
-        </datalist>
-    </div>
-    <script>
-        document.getElementById("useVideo").addEventListener("change", checkUseVideo);
-        checkUseVideo();
-        function checkUseVideo() {
+  <div id="youtubeLinks">
+      <label for="videoLink" class="labelText">YouTube Link</label>
+      <input id="videoLink" type="url" placeholder="https://www.youtube.com/watch?v=PRwXuRIR3Co" list="defaultVideos" class="inputText">
 
-            let checkBox = document.getElementById("useVideo");
-            let youtubeLinks = document.getElementById("youtubeLinks");
+      <datalist id="defaultVideos">
+          <option value="https://www.youtube.com/watch?v=PRwXuRIR3Co"> </option>
+          <option value="https://www.youtube.com/watch?v=vT1N1Pwc50w"> </option>
+          <option value="https://www.youtube.com/watch?v=Vgrqa189Jy0"> </option>
+          <option value="https://www.youtube.com/watch?v=qD2OaU8FdFE"> </option>
+          <option value="https://www.youtube.com/watch?v=0gdIaRI1w7w"> </option>
+      </datalist>
+  </div>
 
-            if(checkBox.checked)
-            {
-                youtubeLinks.style.display = "block";
-            }
-            else {
-                youtubeLinks.style.display = "none";
-            }
-        }
-    </script>
+  <h2 class="subtitle">Advanced</h2>
 
+  <label for="minTime" class="labelText">Minimum Cooldown Time</label>
+  <input id="minTime" type="number" min=0 value=45 step=5 class="inputText">
 
-    <h2>Advanced</h2>
-    <label for="minTime">Minimum Cooldown Time</label><input id="minTime" type="number" min=5 value=45 step=5 style="text-align:right;"><span style="margin-left:10px;">min</span>
-    <label for="maxTime">Maximum Cooldown Time</label><input id="maxTime" type="number" min=5 value=90 step=5 style="text-align:right;"><span style="margin-left:10px;">min</span>
+  <br><br>
+
+  <label for="maxTime" class="labelText">Maximum Cooldown Time</label>
+  <input id="maxTime" type="number" min=5 value=90 step=5 class="inputText">
 </div>
 
-<script src="settings.js"></script>
 </body>
 </html>
