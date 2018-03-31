@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Preferences</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 <div>
     <h1>Preferences</h1>
-    
+    <h2>Exercise</h2>
+    <label for="useVideo">Use YouTube Video</label><input id="useVideo" type="checkbox">
+    <label for="videoLink">YouTube Link</label><input id="videoLink" type="url" placeholder="https://www.youtube.com/watch?v=PRwXuRIR3Co" list="defaultVideos">
+
+    <datalist id="defaultVideos">
+        <option value="https://www.youtube.com/watch?v=PRwXuRIR3Co">
+    </datalist>
+
+    <h2>Advanced</h2>
+    <label for="minTime">Minimum Cooldown Time</label><input id="minTime" type="number" min=5 value=45 step=5 style="text-align:right;"><span style="margin-left:10px;">min</span>
+    <label for="maxTime">Maximum Cooldown Time</label><input id="maxTime" type="number" min=5 value=90 step=5 style="text-align:right;"><span style="margin-left:10px;">min</span>
 </div>
 </body>
 </html>
