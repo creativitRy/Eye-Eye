@@ -96,5 +96,6 @@ window.onload = function() {
 function Restart(){
     document.getElementById("Accuracy").innerHTML = "<a>Not yet Calibrated</a>";
     ClearCalibration();
-    PopUpInstruction();
+    ClearCanvas();
+    ShowCalibrationPoint();
 }
