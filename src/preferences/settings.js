@@ -23,3 +23,18 @@ function saveSettings() {
     settings.set("maxTime", document.getElementById("maxTime").value);
     console.log("saved")
 }
+
+document.getElementById("useVideo").addEventListener("change", checkUseVideo);
+checkUseVideo();
+function checkUseVideo() {
+
+    let checkBox = document.getElementById("useVideo");
+    let youtubeLinks = document.getElementById("youtubeLinks");
+
+    if(checkBox.checked) {
+        youtubeLinks.style.display = "block";
+    }
+    else {
+        youtubeLinks.style.display = "none";
+    }
+}
