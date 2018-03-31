@@ -18,6 +18,18 @@ module.exports.devMenu = {
             }
         },
         {
+            label: "Show obtrusive notice",
+            click: () => {
+                require("./../notify/obtrusive_notice").showNotice();
+            }
+        },
+        {
+            label: "Show unobtrusive notice",
+            click: () => {
+                require("./../notify/unobtrusive_notice").showNotice();
+            }
+        },
+        {
             label: "Quit",
             accelerator: "CmdOrCtrl+Q",
             click: () => {
