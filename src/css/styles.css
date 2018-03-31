@@ -1,0 +1,82 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: #525252;
+}
+
+a {
+    text-decoration: none;
+    color: #cb3837;
+}
+
+.container {
+    text-align: center;
+}
+html, body, video {
+  height: 200px;
+  width: 200px;
+  margin: 0;
+}
+video {
+  display: block;
+}
+/* Calibration point position */
+.Calibration{
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background-color: red;
+  opacity: 0.2;
+  border-color: black;
+  border-style: solid;
+  position:fixed;
+}
+#Pt1{
+  top: 70px;
+  left:210px;
+}
+#Pt2{
+  top: 70px;
+  left:50vw;
+  margin-left: 340;
+}
+#Pt3{
+  top: 70px;
+  right:2vw;
+}
+#Pt4{
+  top:50vh;
+  left:2vw;
+}
+#Pt5{
+  top: 50vh;
+  left: 50vw;
+}
+#Pt6{
+  top: 50vh;
+  right:2vw;
+}
+#Pt7{
+  bottom:2vw;
+  left: 2vw;
+}
+#Pt8{
+  bottom:2vw;
+  left:50vw;
+}
+#Pt9{
+  bottom:2vw;
+  right:2vw;
+}
