@@ -1,5 +1,5 @@
 const {BrowserWindow} = require("electron");
-const {load} = require("./../preferences/prefLoader");
+const {loadPref} = require("./../preferences/prefLoader");
 const {change} = require("./../calibrator/calibrateLoader");
 
 module.exports.mainMenu = {
@@ -22,7 +22,7 @@ module.exports.mainMenu = {
             label: "Preferences",
             click: () => {
                 const win = new BrowserWindow();
-                load(win);
+                loadPref(win);
             }
         },
         {
