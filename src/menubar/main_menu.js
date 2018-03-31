@@ -13,6 +13,7 @@ module.exports.mainMenu = {
         {
             label: "Exercise",
             click: () => {
+                // fixme
                 exercise.showNotice();
             }
         },

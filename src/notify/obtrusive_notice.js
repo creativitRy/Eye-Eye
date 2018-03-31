@@ -1,5 +1,6 @@
 const {BrowserWindow, remote} = require('electron');
 const exercise = require("./../exercise/exercise");
+const tract = require("./../track/track");
 
 let noticeWindow = null;
 
@@ -10,7 +11,8 @@ module.exports.showNotice = function () {
     noticeWindow = new BrowserWindow({width: 500, height: 300, frame: false});
     noticeWindow.setAlwaysOnTop(true);
     noticeWindow.on('closed', () => {
-        noticeWindow = null
+        noticeWindow = null;
+        track.startTimer();
     });
     noticeWindow.loadURL(`file://${__dirname}/obtrusive_notice.html`);
 };
