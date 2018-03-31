@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./loader.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./responseLoader.js"></script>
+    <title>Accuracy Calculation</title>
+  </head>
+  <body>
+    <div id="loading">
+      <div id="loadingText">LOADING</div>
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+    <!-- add the image thing here -->
+    <div id="result">
+      <div id="complete">Calibration complete!</div>
+      <div id="explanatory">The accuracy was:</div>
+      <div id="accuracy"></div>
+      <div id="confirmButton" onclick="returnToScreen()">CONFIRM</div>
+    </div>
+  </body>
+</html>

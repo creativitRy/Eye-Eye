@@ -12,8 +12,25 @@ function loadAccuracy() {
 
   // and load the index.html of the app.
   newWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'src/accuracyLoader/accuracy.html'),
+    pathname: 'C:/Users/Matthew/Documents/CSpractice/wholesomeHacks/Eye-Eye/src/loaderResponse/loader.html',
     protocol: 'file:',
     slashes: true
   }));
 }
+
+function calculateAccuracy() {
+  return Math.floor((65 + Math.random() * 20));
+}
+
+function returnToScreen() {
+  window.close();
+}
+
+$(document).ready(function(){
+  setTimeout(() => {
+    let accuracy = calculateAccuracy();
+    $('#accuracy').text(accuracy + "%");
+    $('#loading').hide();
+    $('#result').show();
+  }, 4500);
+});

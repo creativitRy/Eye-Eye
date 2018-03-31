@@ -1,9 +1,10 @@
-const {app, BrowserWindow} = require("electron");
+const {app, BrowserWindow, remote} = require("electron");
 const {loadPref} = require("./../preferences/prefLoader");
 const {change} = require("./../calibrator/calibrateLoader");
 
 let calibrate = null;
 let pref = null;
+// let currentWindow = remote.getCurrentWindow();
 
 module.exports.mainMenu = {
     label: "File",

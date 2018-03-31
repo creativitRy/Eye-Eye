@@ -69,18 +69,11 @@ $(document).ready(function(){
         $("#Pt5").show();
       }
 
-      // if (PointCalibrate >= 9){ // last point is calibrated
-      //   var accuracyLabel = "<a>Calibrated!</a>";
-      //  document.getElementById("Accuracy").innerHTML = accuracyLabel;
-      //  webgazer.end();
-      //
-      //
-      //   // window.location.href='/taskinstructions.html'
-      // }
-
-      if (PointCalibrate >= 9){ // last point is calibrated
+      if (PointCalibrate >= 9) { // last point is calibrated
         loadAccuracy();
-        window.close();
+        setTimeout(() => {
+          window.close()
+        }, 200);
       }
     });
 });
