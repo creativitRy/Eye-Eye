@@ -1,4 +1,5 @@
 const {BrowserWindow, remote} = require('electron');
+const exercise = require("./../exercise/exercise");
 
 let noticeWindow = null;
 
@@ -15,8 +16,7 @@ module.exports.showNotice = function () {
 };
 
 function loadExercise() {
-    // todo
-    console.log("exercise window");
+    exercise.showNotice();
     closeWindow();
 }
 
