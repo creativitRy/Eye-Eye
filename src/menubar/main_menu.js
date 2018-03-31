@@ -1,4 +1,5 @@
 const {app, BrowserWindow, remote} = require("electron");
+const exercise = require("./../exercise/exercise");
 const {loadPref} = require("./../preferences/prefLoader");
 const {change} = require("./../calibrator/calibrateLoader");
 
@@ -12,7 +13,7 @@ module.exports.mainMenu = {
         {
             label: "Exercise",
             click: () => {
-                alert("Exercise")
+                exercise.showNotice();
             }
         },
         {
