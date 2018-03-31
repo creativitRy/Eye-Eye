@@ -21,6 +21,11 @@ module.exports.begin = function () {
 
 module.exports.startTimer = startTimer;
 
+module.exports.resetTimeout = function () {
+    resetVals();
+    startTimer();
+};
+
 function updateStd() {
     // todo: get from webcam
     let newX = Math.random() * 10;
@@ -37,6 +42,8 @@ function updateStd() {
 
     let variance = xSq - x * x;
     let stdNew = Math.sqrt(variance);
+
+    console.log(stdNew);
 
     if (stdNew > std + (100 / numValues)) {
         x = 0;
@@ -56,12 +63,17 @@ function updateStd() {
 }
 
 function onTimeEnded() {
-    pointer = setTimeout(restart, (settings.get("maxTime", 90) - settings.get("minTime", 45)) * 60000);
+    pointer = setTimeout(restart, Math.abs(settings.get("maxTime", 90) - settings.get("minTime", 45)) * 60000 + 250);
     canShowNotice = true;
 }
 
 function restart() {
     notice.showNotice();
+    resetVals();
+}
+
+function resetVals()
+{
     x = 0;
     xSq = 0;
     numValues = 0;

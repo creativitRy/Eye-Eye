@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Preferences</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <script src="settings.js"></script>
 </head>
 <body>
 <div>
@@ -34,13 +33,15 @@
   <h2 class="subtitle">Advanced</h2>
 
   <label for="minTime" class="labelText">Minimum Cooldown Time</label>
-  <input id="minTime" type="number" min=0 value=45 step=5 class="inputText">
+  <input id="minTime" type="number" min=5 value=45 step=5 class="inputText">
 
   <br><br>
 
   <label for="maxTime" class="labelText">Maximum Cooldown Time</label>
   <input id="maxTime" type="number" min=5 value=90 step=5 class="inputText">
 </div>
+
+<script src="settings.js"></script>
 
 </body>
 </html>
