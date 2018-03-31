@@ -8,7 +8,7 @@ module.exports.showNotice = function () {
     if (noticeWindow != null)
         return;
 
-    noticeWindow = new BrowserWindow({width: 500, height: 300, frame: false});
+    noticeWindow = new BrowserWindow({width: 500, height: 300, frame: false, resizable: false});
     noticeWindow.setAlwaysOnTop(true);
     noticeWindow.on('closed', () => {
         noticeWindow = null;

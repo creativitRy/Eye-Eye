@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Playfair+Display|Montserrat|Oswald:300,400|Ubuntu:400,700');
+
+#sad {
+  height: 275px;
+  position: absolute;
+}
+.infoText {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 2.25em;
+  position: absolute;
+}
+#text1 {
+  margin-left: 215px;
+  margin-top: 20px;
+}
+#text2 {
+  margin-left: 215px;
+  margin-top: 110px;
+  font-size: 2.35em;
+}
+#exercise {
+  position: absolute;
+  margin-left: 215px;
+  margin-top: 190px;
+  width: 250px;
+  height: 35px;
+  background: green;
+}
+#close {
+  position: absolute;
+  margin-left: 215px;
+  margin-top: 245px;
+  width: 250px;
+  height: 35px;
+  background: red;
+}
+.mmm {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+
+  border: 2px groove black;
+  border-radius: 3px;
+
+  text-align: center;
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.mmm:hover {
+  color: white;
+  background: #303238;
+  cursor: pointer;
+
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
