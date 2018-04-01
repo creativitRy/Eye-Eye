@@ -11,3 +11,5 @@ Eye-Eye be a revolutionary program that tracks yer eye movement 'n examines how 
 ![alt text](https://github.com/creativitRy/Eye-Eye/blob/master/Art/screenshot.PNG "Eye/Eye in action")
 
 Created wit' [Electron](https://electronjs.org/) 'n [Webgazer.JS](https://webgazer.cs.brown.edu/)
+
+**First place at Freetail Hackers' 2018 Spring Hackathon (Wholesome Hacks)**
