@@ -11,7 +11,7 @@ module.exports.showNotice = function () {
         return;
     }
 
-    exerciseWindow = new BrowserWindow();
+    exerciseWindow = new BrowserWindow({width: 750, height: 750, resizable: false});
     exerciseWindow.on('closed', () => {
         exerciseWindow = null
     });
