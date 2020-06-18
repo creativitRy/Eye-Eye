@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "electron-settings": "^3.1.4",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "node-notifier": "^5.2.1",
     "sweetalert": "^2.1.0"
   }
